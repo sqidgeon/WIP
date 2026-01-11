@@ -1,1 +1,104 @@
-Main Site is under maintenance
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Under Maintenance</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(#87ceeb, #f4f4f4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    /* Digging animation */
+    .digging {
+      width: 200px;
+      margin: 0 auto;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+
+    .ground {
+      margin-top: -10px;
+      height: 20px;
+      background: #8b5a2b;
+      border-radius: 0 0 10px 10px;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🚧 Site Under Maintenance</h1>
+    <p>We’re working hard to improve the site. Please check back soon!</p>
+
+    <!-- Man Digging (SVG) -->
+    <svg class="digging" viewBox="0 0 200 200">
+      <!-- Head -->
+      <circle cx="100" cy="40" r="15" fill="#f1c27d"/>
+
+      <!-- Body -->
+      <rect x="90" y="55" width="20" height="45" fill="#4a90e2"/>
+
+      <!-- Legs -->
+      <line x1="95" y1="100" x2="85" y2="140" stroke="#333" stroke-width="5"/>
+      <line x1="105" y1="100" x2="115" y2="140" stroke="#333" stroke-width="5"/>
+
+      <!-- Arms -->
+      <line x1="90" y1="70" x2="60" y2="95" stroke="#333" stroke-width="5"/>
+      <line x1="110" y1="70" x2="140" y2="85" stroke="#333" stroke-width="5"/>
+
+      <!-- Shovel -->
+      <line x1="140" y1="85" x2="155" y2="120" stroke="#666" stroke-width="4"/>
+      <rect x="148" y="120" width="20" height="10" fill="#555"/>
+    </svg>
+
+    <div class="ground"></div>
+
+    <footer>
+      © 2026 — We’ll be back shortly
+    </footer>
+  </div>
+
+  <script>
+    // Optional JS (future use or effects)
+    console.log("Maintenance mode active");
+  </script>
+
+</body>
+</html>
